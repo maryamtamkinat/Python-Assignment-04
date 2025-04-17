@@ -31,7 +31,7 @@ while running:
         pygame.draw.rect(screen,BLUE, rect)
     
     mouse_x , mouse_y = pygame.mouse.get_pos()
-    eraser.topleft = (mouse_x - ERASER_SIZE // 2, mouse_y)
+    eraser.topleft = (mouse_x, mouse_y)
 
     new_grid = []
     for rect in grid:
